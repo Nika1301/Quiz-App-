@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.main-content {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+header {
+  background-color: rgb(92, 168, 254);
+  width: 100%;
+  margin-bottom: 10px;
+  position: fixed;
+  z-index: 10000;
+}
+h1 {
+  text-align: center;
+  color: azure;
+  padding: 5px;
+}
+.card {
+  position: relative;
+  border: 2px solid black;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 1rem;
+  width: 20rem;
+  height: 20rem;
+  margin-bottom: 20px;
+}
+.card__heading {
+  position: absolute;
+  color: rgb(32, 29, 50);
+  text-align: center;
+  top: 20%;
+}
+.card__bookmark {
+  position: absolute;
+  right: 2rem;
+  top: 0;
+  padding: 2px;
+  margin: 2px;
+  background-color: yellow;
+}
+.card__answer {
+  position: absolute;
+  border: 2px solid rgb(21, 21, 95);
+  border-radius: 20px;
+  background-color: rgba(45, 45, 176, 0.678);
+  color: white;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px;
+  top: 50%;
+}
+.card__tags {
+  position: absolute;
+  list-style: none;
+  display: flex;
+  right: 2rem;
+  bottom: 0;
+  padding: 2px;
+  left: 5px;
+  margin-bottom: 10px;
+}
+.tags__list {
+  background-color: cornflowerblue;
+  margin-right: 5px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 5px;
+}
+.footer {
+  position: fixed;
+  background-color: rgb(92, 168, 254);
+  width: 100%;
+  padding: 10px;
+  bottom: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+.nav__redirect {
+  color: azure;
+}
