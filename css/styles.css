@@ -19,6 +19,7 @@ h1 {
   padding: 5px;
 }
 .card {
+  position: relative;
   display: flex;
   border: 2px solid black;
   flex-direction: column;
@@ -26,6 +27,13 @@ h1 {
   justify-content: space-between;
   margin: auto;
   margin-bottom: 2rem;
+}
+.card button:nth-child(1) {
+  position: absolute;
+  right: 0;
+  top: -15px;
+  margin: 5px;
+  background-color: gold;
 }
 .card__heading {
   text-align: center;
@@ -42,10 +50,12 @@ h1 {
 }
 .card__tags {
   display: flex;
+  justify-content: flex-start;
   list-style: none;
   gap: 10px;
   margin-top: 2rem;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 .tags__list {
   background-color: cornflowerblue;
@@ -65,9 +75,13 @@ h1 {
   display: flex;
   justify-content: space-around;
 }
-.nav__redirect {
-  color: azure;
+
+.nav > a:hover {
+  background-color: rgb(104, 104, 234);
+  color: white;
 }
-.bookmark {
-  margin: auto;
+details {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  color: blanchedalmond;
 }
